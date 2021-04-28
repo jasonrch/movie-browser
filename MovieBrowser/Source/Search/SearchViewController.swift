@@ -93,9 +93,4 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate  {
     {
         return UITableView.automaticDimension
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedcell = tableView.cellForRow(at: indexPath)
-        performSegue(withIdentifier: "segueSearchDetailIdentifier", sender: selectedcell)
-    }
 }

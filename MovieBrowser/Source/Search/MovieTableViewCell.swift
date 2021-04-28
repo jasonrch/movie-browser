@@ -60,7 +60,7 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     private func setMovieScoreWithAttributedText(){
-        let movieScoreAttributedText = NSMutableAttributedString(string: "\(searchResults?.voteAverage ?? 0) out of 10 ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12)])
+        let movieScoreAttributedText = NSMutableAttributedString(string: "\(searchResults?.voteAverage ?? 0)  ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16)])
         
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
